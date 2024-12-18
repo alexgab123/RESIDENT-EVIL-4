@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<!-- saved from url=(0079)file:///C:/Users/LAB%202%20-%2019/Desktop/resident%20evil%204/pagina%20web.html -->
+<html lang="es"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RESIDENT EVIL</title>
+    <style>
+        body {
+            background-image: url('https://es.gizmodo.com/app/uploads/2022/06/8f9b8af2ed722d83fab4ef2d0fccf2ec-680x383.jpg');
+            background-size: cover;
+            color: white;
+            
+            font-family: Arial, sans-serif;
+            background-size: cover; 
+            background-repeat: no-repeat; 
+            background-attachment: fixed; 
+            background-color: #f4f4f9;
+
+        }  
+        
+        
+        nav button:hover {
+            background-color: #585b0d;
+            
+            
+        }
+        section {
+            padding: 15px;
+            margin: 15px auto;
+            max-width: 800px;
+            background-color: rgba(180, 8, 8, 0.591);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            overflow: auto;
+        }
+
+        h1  {
+           
+           top: 0;
+           width: 100%;
+           background-color: rgba(0, 0, 0, 0.7);
+           padding: 10px;
+           text-align: center;
+       }
+
+
+        textarea
+        {
+            font-family: Arial, sans-serif;
+            color: #c1c1ec;
+          background-color: #4242399c;
+        }
+
+        
+
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        section {
+            padding: 60px 20px;
+            min-height: 90vh;
+        }
+        .sub-seccion {
+            color: rgb(237, 230, 230);
+        }
+        .tabla-imagenes {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .tabla-imagenes td {
+            padding: 10px;
+            text-align: center;
+        }
+        .tabla-imagenes img {
+            width: 100px;
+            height: 100px;
+            cursor: pointer;
+        }
+        .video {
+            width: 100%;
+            height: 500px;
+        }
+        .volver {
+            display: block;
+            margin-top: 20px;
+            color: rgb(19, 231, 79);
+            text-decoration: none;
+        }
+        .carrusel {
+            display: flex;
+            overflow: hidden;
+            width: 100%;
+            margin: 100px 0;
+        }
+        .carrusel img {
+            width: 100%;
+            max-width: 200px;
+            margin: 0 10px;
+            transition: transform 0.5s ease;
+            box-shadow: 0 4px 8px rgba(208, 5, 5, 0.738);
+            
+        }
+        .carrusel img:hover{
+            transform: scale(1.1);
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+        <center><img src="./index_files/titulo principal.jpg" alt="titulo" width="700" height="250"></center>
+    <nav>
+        
+        <a href="file:///C:/Users/LAB%202%20-%2019/Desktop/resident%20evil%204/pagina%20web.html#HISTORIA">HISTORIA</a>
+        <a href="file:///C:/Users/LAB%202%20-%2019/Desktop/resident%20evil%204/pagina%20web.html#FORMAS%20DE%20JUEGO">FORMAS DE JUEGO</a>
+        <a href="file:///C:/Users/LAB%202%20-%2019/Desktop/resident%20evil%204/pagina%20web.html#IMAGENES">IMAGENES</a>
+        <a href="file:///C:/Users/LAB%202%20-%2019/Desktop/resident%20evil%204/pagina%20web.html#VIDEOS">VIDEOS</a>
+        <a href="file:///C:/Users/LAB%202%20-%2019/Desktop/resident%20evil%204/pagina%20web.html#BIBLIOGRAFIA">BIBLIOGRAFIA</a>
+    </nav>
+
+    <center>
+        
+        <div class="carrusel">
+            <marquee direction="rigth">
+            <img src="./index_files/carrusel titulo.jpg" alt="Imagen 1" width="500" height="300" onclick="rotarImagen(this)">
+            <img src="./index_files/carrusel leon.jpg" alt="Imagen 2" width="500" height="300" onclick="rotarImagen(this)">
+            <img src="./index_files/carrusel cuchillo.jpg" alt="Imagen 3" width="500" height="300" onclick="rotarImagen(this)">
+            <img src="./index_files/carrusel disparo.jpg" alt="Imagen 4" width="500" height="300" onclick="rotarImagen(this)">
+            <img src="./index_files/carrusel corriendo.jpg" alt="Imagen 5" width="500" height="300" onclick="rotarImagen(this)">
+            <img src="./index_files/carrusel agarador.jpg" alt="Imagen 6" width="500" height="300" onclick="rotarImagen(this)">
+            <img src="./index_files/carrusel leo y ahsly.jpg" alt="Imagen 7" width="500" height="300" onclick="rotarImagen(this)">
+            <img src="./index_files/carrusel armadura.jpg" alt="Imagen 8" width="500" height="300" onclick="rotarImagen(this)">
+            <img src="./index_files/carrusel motosierra.jpg" alt="Imagen 9" width="500" height="300" onclick="rotarImagen(this)">
+            <img src="./index_files/carrusel leon y el maso.jpg" alt="Imagen 10" width="500" height="300" onclick="rotarImagen(this)">
+        
+    </marquee>
+</div></center>   
+
+    
+
+    <section id="HISTORIA">
+        <h1>HISTORIA</h1>
+       <p>an pasado seis años desde la catástrofe biológica de Raccoon City.
+            Leon S. Kennedy, uno de los supervivientes, ha sido asignado como agente especial del gobierno al presidente de los Estados Unidos.  Con la experiencia de múltiples misiones a sus espaldas, Leon es enviado a rescatar a la hija del presidente, la cual ha sido secuestrada.
+            Sus pesquisas le llevan a un aislado pueblo europeo, en donde algo muy extraño está pasando con sus habitantes...
+           El telón se alza desvelando una cruenta experiencia de Survival Horror y la historia de un angustioso rescate.</p> 
+
+        <h2>COMENTARIOS</h2>
+        <center><textarea rows="10" cols="50" style="overflow:auto;resize:none;"></textarea></center>
+<h1>PERSONJES</h1>
+        <table class="tabla-imagenes">
+            <tbody><tr>
+                <td>
+                    <img src="./index_files/Leon S Kennedy.jpg" alt="Imagen 1" width="700" height="250" onclick="mostrarSubSeccion(&#39;Leon&#39;)"><h2>Leon S. Kennedy</h2>
+                </td>
+
+             <td>
+                <img src="./index_files/Ashley Graham.jpg" alt="Imagen 2" width="700" height="350" onclick="mostrarSubSeccion(&#39;Ashley&#39;)">  <h2>Ashley Graham</h2>  
+            </td>
+            <td>
+                <img src="./index_files/Luis Sera.jpg" alt="Imagen 2" width="700" height="350" onclick="mostrarSubSeccion(&#39;Luis Sera&#39;)"> <h2>Luis Sera</h2>
+                </td>
+              <td>
+               <img src="./index_files/Ada Wong.jpg" alt="Imagen 2" width="700" height="350" onclick="mostrarSubSeccion(&#39;Ada Wong&#39;)"><h2>Ada Wong</h2>
+                </td>
+              <td>
+            
+               <img src="./index_files/Ingrid Hunnigan.jpg" alt="Imagen 2" width="700" height="350" onclick="mostrarSubSeccion(&#39;Ingrid Hunnigan&#39;)"><h2>Ingrid Hunnigan</h2>
+              </td>
+          
+            </tr>
+            <tr>
+                <td>
+                    <img src="./index_files/Osmund Saddler.jpg" alt="Imagen 2" width="700" height="350" onclick="mostrarSubSeccion(&#39;Osmund Saddler&#39;)"><h2>Osmund Saddler</h2>
+                </td>
+                <td>
+                    <img src="./index_files/Bitores Mendez.jpg" alt="Imagen 2" width="700" height="350" onclick="mostrarSubSeccion(&#39;Bitores Méndez&#39;)"><h2>Bitores Méndez</h2>
+                </td>
+                <td>
+                    <img src="./index_files/Ramón Salazar.jpg" alt="Imagen 2" width="700" height="350" onclick="mostrarSubSeccion(&#39;Ramón Salazar&#39;)"><h2>Ramón Salazar</h2>
+                </td>
+                <td>
+                    <img src="./index_files/Jack Krauser.jpg" alt="Imagen 2" width="700" height="350" onclick="mostrarSubSeccion(&#39;Jack Krauser&#39;)"><h2>Jack Krauser</h2>
+                </td>
+                <td>
+                    <img src="./index_files/Albert Wesker.jpg" alt="Imagen 2" width="700" height="350" onclick="mostrarSubSeccion(&#39;Albert Wesker&#39;)"><h2>Albert Wesker</h2>
+                </td>
+
+            </tr>
+        </tbody></table>
+        <div id="Leon" class="sub-seccion" style="display:none;">
+            <h2>Leon S. Kennedy</h2>
+            <p>Leon Scott Kennedy (レオン・スコット・ケネディ Reon Sukotto Kenedi?) es uno de los personajes 
+                principales de la saga Resident Evil; él es uno de los protagonistas de Resident Evil 2,
+                 protagonista principal de Resident Evil 4 y uno de los protagonistas en Resident Evil 6. 
+                 Nació en el año 1977. Es un agente del gobierno de EE.UU., de la organización especial D.S.O.
+                  (División de Operaciones de Seguridad). Durante los acontecimientos de septiembre de 1998,
+                   Leon entonces, un policía novato, llega a Raccoon City en su primer día de trabajo enfrentando,
+                    sin saberlo, una experiencia de pesadilla al llegar a una ciudad completamente contaminada con
+                     un agente viral extremadamente letal que cambió su vida de maneras impensables. Al llegar se 
+                     encuentra con el virus-T, enfrentándose a todas las abominaciones creadas por este virus y a
+                     otras atrocidades que presenció en la ciudad. Fue un superviviente junto a Claire Redfield 
+                     (hermana de Chris Redfield) y Sherry Birkin (hija de un importante científico de Umbrella)
+                      a la aterradora experiencia en Raccoon City y pasó a convertirse en un agente secreto del 
+                      gobierno de los Estados Unidos,encargado de proteger la familia presidencial.</p>
+            
+        </div>
+        <div id="Ashley" class="sub-seccion" style="display:none;">
+            <h2>Ashley Graham</h2>
+            <p>Ashley Graham es un personaje ficticio de Resident Evil 4, en donde aparece como 
+                objetivo principal a rescatar de Leon S. Kennedy. Su secuestro a manos de la secta
+                 conocida como Los Iluminados es el motor principal de los acontecimientos del juego.</p>
+        </div>  
+        <div id="Luis Sera" class="sub-seccion" style="display:none;">
+            <h2>Luis Sera</h2>
+            <p>Luis Serra Navarro (ルイス・セラ・ナバロ Ruisu Sera Nabaro), también llamado Luis Sera,
+                 es un personaje de Resident Evil 4 que ayuda a Leon Scott Kennedy y Ada Wong en lograr 
+                 alcanzar sus respectivos objetivos.
+
+                Al parecer, él también estuvo infectado con Las Plagas pero Ada Wong lo ayudó a
+                 sacarla de su cuerpo. Tal vez sea por eso que Luis aceptó entregarle la muestra de 
+                 Las Plagas como se dice en Separate Ways.
+                
+                Leon, a lo largo del juego, se va encontrando las Notas de Luis en las que hay 
+                información acerca de Las Plagas y sus diferentes tipos. También él construyó la 
+                máquina que ayuda a destruir el parásito del cuerpo de los infectados antes de que 
+                eclosione el huevo. Luis y Leon pronto forjaron una buena amistad.
+                
+                Finalmente, en el Castillo de Salazar, Luis fue asesinado por Osmund Saddler
+                 atravesando su cuerpo con su largo tentáculo mientras que en el remake Luis 
+                 fue asesinado por Jack Krauser. </p>
+        </div>  
+        <div id="Ada Wong" class="sub-seccion" style="display:none;">
+            <h2>Ada Wong</h2>
+            <p>Ada Wong (エイダ・ウォン Eida Won?) es un personaje perteneciente a la saga Resident Evil 
+                y que apareció por primera vez en Resident Evil 2. 
+                Se trata de una misteriosa agente espía estadounidense de rasgos orientales.
+                Ada había sido dada por muerta tras los hechos ocurridos en Raccoon City hace seis años, pero la verdad sobre su destino resultó ser algo distinta. Contra todo pronóstico sobrevivió y fue ayudada por Albert Wesker, que se mantuvo en las sombras durante todo el incidente, a escapar de la ciudad antes de su destrucción. A cambio de esta ayuda aceptó seguir trabajando para su organización y rápidamente se convirtió en su mejor agente. Sin embargo, su actuación es sólo una tapadera. Ahora, como parte de un ambicioso plan y viendo que Jack Krauser puede fracasar en su cometido, debe internarse en los dominios de Osmund Saddler y arrebatarle las muestra del parasito de Las Plagas, pidiendo la ayuda de el mejor científico de Saddler, Luis Sera. Aunque con lo que no cuenta es con la reaparición de un viejo conocido, Leon S. Kennedy, que ahora es un agente internacional entrenado para misiones extremas (en este caso salvar a la hija del presidente Ashley Graham) y que, casualmente, también es un ex compañero de Jack Krauser. También ella es la protagonista de Assignment Ada donde su misión es conseguir cinco muestras en la isla para Wesker. Y finalmente actúa como mercenaria en el minijuego The Mercenaries.
+
+Tras la versión original del juego de GameCube, Capcom realizó una versión adicional (que no sería la última) 
+para PlayStation 2 que contenía un tercer minijuego llamado Separate Ways, protagonizado por Ada Wong,
+ en el que se presenta una pequeña aventura paralela a la vivida por Leon. Además está es suplementado 
+ por Ada's Report, en el cual se revelan ciertos secretos, incluyendo el de cómo ella provee a Wesker con un 
+ "regalo diferente" en vez de la muestra de las Plagas que ella consigue en el juego, descubriéndose que ahora 
+ trabaja para una corporación diferente y enfrentada a la de Wesker.
+
+
+He aquí el momento que estuvo esperando 6 años desde lo acontecido en Raccoon City: dar la espalda a Wesker y
+ librarse (al menos por ahora) de sus malévolas garras. En RE4 Ada sigue sintiendo algo por Leon desde el 
+ accidente en Raccoon City y, aunque está mentalizada para cumplir su misión, se entromete 
+ (incluso con Krauser) para que Leon no salga herido. Al final del juego, ayuda a Leon a derrotar a Saddler 
+ (como en Resident Evil 2), dándole un lanzacohetes especial color rojo para derrotarlo y a escapar 
+ de la isla dándole las llaves de una moto acuática. Tal como dice Leon cuando Ashley le pregunta
+  por la mujer de rojo y este le responde que ella es como una parte de el que no puede dejar ir
+            </p>
+        </div>  
+        <div id="Ingrid Hunnigan" class="sub-seccion" style="display:none;">
+            <h2>Ingrid Hunnigan</h2>
+            <p>Ingrid Hunnigan es una mujer de nacionalidad estadounidense, agente del gobierno de 
+                los Estados Unidos de América, que trabaja en la Unidad de Apoyo Operativo (FOS).
+                 Ella a menudo trabaja con Leon Scott Kennedy.
+
+                Ingrid Hunnigan trabajó con Leon por primera vez durante su misión para rescatar
+                 a la hija del presidente, Ashley Graham. De vez en cuando se contactaba con Leon 
+                 para preguntarle cómo le iba o para darle información. Cuando Leon ingresó al 
+                 castillo de Ramón Salazar, lamentablemente perdió el contacto con ella durante 
+                 varias horas porque Los Iluminados secuestraron su línea de comunicación.
+                  No pudo recuperar la línea hasta que la isla que albergaba el equipo de secuestro explotó.
+                 Leon intentó coquetear con Hunnigan, diciéndole que era linda sin sus lentes y pidiéndole
+                 su número cuando todo termino, sin embargo, ella siguió siendo profesional, recordándole que 
+                 todavía estaba de servicio, pero con una sonrisa sutil.
+                
+                En una escena de Resident Evil: Degeneration informándole a Leon que los soldados enviados 
+                a eliminar a los zombis en el aeropuerto fueron vacunados contra el virus-T después de que 
+                se confirmara cual era el virus usado.
+                
+                Ingrid es una experta en telecomunicaciones que intentará ayudar una vez más a Leon 
+                y a su compañera ocasional, Helena, durante los hechos de Resident Evil 6. Su papel 
+                se centra en prestar ayuda por radio a sus compañeros.</p>
+        </div>  
+        <div id="Osmund Saddler" class="sub-seccion" style="display:none;">
+            <h2>Osmund Saddler</h2>
+            <p>Lord Osmund Saddler (オズムンド・サドラー Ozumando Sadorā) es el antagonista principal 
+                de Resident Evil 4.
+
+                Un antiguo investigador y científico especializado en armas biológicas y orgánicas, 
+                Saddler se aisló en una región desolada de España para continuar con sus investigaciones.
+                 Con el tiempo, Saddler se convirtió en el "profeta principal" y máximo líder de
+                  Los Iluminados, una secta y organización paramilitar que buscaba la dominación del mundo y
+                   el establecimiento de un nuevo orden mundial a través de los parásitos conocidos 
+                   como Las Plagas valiéndose del secuestro de Ashley Graham, hija del Presidente de 
+                   los EE.UU. a la que infectó con el mencionado organismo parasitario para que una vez
+                    fuera dejada en libertad, infecte al resto de la familia presidencial y pueda cumplir 
+                    su objetivo. Sin embargo, Saddler no tomó en consideración que el gobierno enviaría a un 
+                agente del servicio secreto a su rescate. </p>
+        </div>  
+        <div id="Bitores Méndez" class="sub-seccion" style="display:none;">
+            <h2>Bitores Méndez</h2>
+            <p>Bitores Mendez (en japonés: ビトレス・メンデス, Bitoresu Mendesu)
+                 es un personaje de Resident Evil 4 que aparece como enemigo y jefe de "El Pueblo".
+
+                Solía ser el alcalde del pueblo, y era muy querido por todos los pobladores,
+                hasta la llegada de Osmund Saddler al pueblo. Saddler se apoderó de la mente de 
+                Méndez para que el pueblo lo siguiera a él.</p>
+        </div>  
+       
+      <div id="Ramón Salazar" class="sub-seccion" style="display:none;">
+            <h2>Ramón Salazar</h2>
+            <p>Ramón Salazar (ラモン·サラザール Ramon Sarazāru) es uno de los antagonistas principales 
+                de Resident Evil 4. Era el octavo castellano de una fortaleza cerca del pueblo, 
+                que fue controlado por un culto religioso conocido como "Los Iluminados".
+                 A pesar de su diminuta estatura similar a la de un niño de diez años, su cabello gris y
+                 arrugada cara le dan la apariencia de un anciano, que afirma que está en sus veinte años 
+                 de edad, lo que sugiere que su envejecimiento prematuro es posiblemente una consecuencia 
+                 de mutación debido a su largo periodo de exposición a "Las Plagas".</p>
+        </div>  
+        <div id="Jack Krauser" class="sub-seccion" style="display:none;">
+            <h2>Jack Krauser</h2>
+            <p>Jack Krauser es un ex militar de las fuerzas especiales, un experto luchador de combates
+                 cuerpo a cuerpo y con cuchillos, así como un gran arquero, Krauser posee velocidad 
+                 sobrehumana, energía, fuerza, y ha conseguido la habilidad de transmutar su 
+                 brazo izquierdo en una garra mutada gigante. Ex-colega de Leon Scott Kennedy. 
+                 Fue dado por muerto en el año 2002 y contratado por Albert Wesker y las personas que 
+                 tienen como plan renacer Umbrella para "restaurar el orden mundial", 
+                 usando armas biológicas.</p>
+        </div>  
+        <div id="Albert Wesker" class="sub-seccion" style="display:none;">
+            <h2>Albert Wesker</h2>
+            <p>Albert Wesker (アルバート・ウェスカ Arubāto Wesukā?), conocido por su gran participación en la 
+                saga Resident Evil como uno de los villanos principales. Fue uno de los primeros personajes 
+                en aparecer en la franquicia junto con Chris Redfield, Jill Valentine, Barry Burton y los 
+                demás miembros de S.T.A.R.S. Aún así, su historia es más remota a los acontecimientos del 
+                23 y 24 de julio de 1998.
+
+                Según uno de los productores de Capcom, Jun Takeuchi, "Albert representa el lado oscuro de 
+                la humanidad; el lado primitivo. Todo el ego que optimiza lo contrarrestamos con Chris, 
+                quien es básicamente el polo opuesto. Es una lucha entre la oscuridad y la luz".
+                
+                Wesker es considerado el antagonista por excelencia de la serie, su vestimenta negra en 
+                compañía de sus gafas imponen respeto. Se ha considerado presuntuoso desde joven, precavido,
+                 manipulador e ingenioso para evadir y solucionar sus problemas en diversas situaciones. 
+                 Todo esto con el objetivo de crear una raza humana superior.</p>
+        </div>  
+        
+        <a href="file:///C:/Users/LAB%202%20-%2019/Desktop/resident%20evil%204/pagina%20web.html#">VOLVER INICIO</a>
+    </section>
+
+<section id="FORMAS DE JUEGO">
+         <h1>FORMAS DE JUEGO</h1>
+        <table>
+            <tbody><tr>
+                <td><img src="./index_files/resident-evil-4-remake-2849369.jpg" alt="forma 1" width="400" height="400"></td>
+               <td> Afila tu cuchillo y prepárate para patear traseros. 
+                    El remake de Resident Evil 4 es una puesta al día total e intachable de uno de los videojuegos 
+                    más influyentes del nuevo milenio. Y da igual si te conoces el original al dedillo o vienes de nuevas:
+                     toca adaptarte a este nuevo viaje hacia la muy peculiar España profunda imaginada por Capcom.
+                     La buena noticia es que te vamos a ayudar a adaptarte. 
+                    La noticia todavía mejor es que te lo vas a pasar de escándalo en el proceso. </td>
+            </tr><tr>
+                <td><p>La posibilidad de activar o desactivar la puntería asistida la tienes siempre a mano, 
+                    pero es posible que andes corto de munición. La solución obvia es cargar con montones de balas contigo, 
+                    faltaría más, pero hay un recurso más eficaz: maximizar el daño causado. Porque salvo que sean pistolas 
+                    de gran calibre, incluso si le das un balazo en la frente a tu enemigo de turno puede activar como si 
+                    le hicieses cosquillas.
+
+                    Lo primero que tienes que tener en cuenta es la mira, la marca que muestra hacia dónde estás apuntando. 
+                    Si disparas cuando está dispersa harás un daño más o menos normal o leve, pero si está cerrado no solo 
+                    aumentarás la posibilidad de obtener un daño crítico, sino que aturdirás a los enemigos menores.
+                     Algo esencial, ya que puedes aprovechar para darle una patada giratoria y despejar un poco la zona.
+                    
+                   
+                    Por otro lado, si eres más de disparar usando la mirilla ten presente que igual te interesa ajustar 
+                    desde las opciones que se mantenga la última distancia fijada en lugar de reiniciarse tras apartar 
+                    la vista. No solo de cara a realizar una ofensiva lejana, sino para cuando toca recargar munición 
+                    y los enemigos de turno vienen directos hacia ti.
+                    </p></td>
+                <td><img src="./index_files/cnne-1367701-leon-s-kennedy-y-ashley-graham-en-el-remake-de-resident-evil-4.jpg" alt="forma 2" width="400" height="400"></td>
+            </tr>
+        </tbody></table>
+        <a href="file:///C:/Users/LAB%202%20-%2019/Desktop/resident%20evil%204/pagina%20web.html#">VOLVER INICIO</a>
+    </section>
+
+    <section id="IMAGENES">
+        <h1>IMAGENES</h1>
+        <table>
+            <tbody><tr>
+
+                <td><img src="./index_files/1366_2000.webp" alt="imagen 1" width="200" height="200"></td>
+                <td><img src="./index_files/resident-evil-4-original-gameplay.jpg" alt="imagen 2" width="200" height="200"></td>
+                <td><img src="./index_files/ss_ab807f8ad9e968a620777caf483cb6020367b9ee.1920x1080.jpg" alt="imagen 3" width="200" height="200"></td>
+                <td><img src="./index_files/ss_59d1b19964cc532213df92c8287b75a0bffeb33c.1920x1080.jpg" alt="imagen 4" width="200" height="200"></td>
+            </tr>
+            <tr>
+               
+                <td><img src="./index_files/ss_29ffb23060c862bcbe1d1434e83d41ab10484d8e.1920x1080.jpg" alt="imagen 5" width="200" height="200"></td>
+                <td><img src="./index_files/ss_69810f4cd155912fdfdd21da70181df7d454c874.1920x1080.jpg" alt="imagen 6" width="200" height="200"></td>
+                <td><img src="./index_files/ss_0442f7fb4327d79802c2db8ea8d23d228a28d896.1920x1080.jpg" alt="imagen 7" width="200" height="200"></td>
+                <td><img src="./index_files/ss_22d21ef8c4e54cc5f8418f9b233178bf7869ee01.1920x1080.jpg" alt="imagen 8" width="200" height="200"></td>
+            </tr>
+            <tr>
+                
+                <td><img src="./index_files/ss_5a4297e594297a13f1f4c665966eb3d88d37b58d.1920x1080.jpg" alt="imagen 9" width="200" height="200"></td>
+                <td><img src="./index_files/ss_d8967ced32ccbbd94f852b3843a5b76febf3ef16.1920x1080.jpg" alt="iamgen 10" width="200" height="200"></td>
+                <td><img src="./index_files/ss_d90819dc43141eee26b69a6cab43be00164adcb0.1920x1080.jpg" alt="iamgen 11" width="200" height="200"></td>
+                <td><img src="./index_files/ss_440756cbcb0231dd325991d38b85d3b60d976b95.1920x1080.jpg" alt="imagen 12" width="200" height="200"></td>
+            </tr>
+        </tbody></table>
+        <a href="file:///C:/Users/LAB%202%20-%2019/Desktop/resident%20evil%204/pagina%20web.html#">VOLVER INICIO</a>
+    </section>
+
+    <section id="VIDEOS">
+        <h1>VIDEOS</h1>
+       <center>
+           <table>
+           
+            <tbody><tr>  
+            <td><h2>PRIM.TRAILER</h2><iframe width="200" height="200" src="./index_files/O75Ip4o1bs8.html"></iframe></td>
+            <td><h2>SEG.TRAILERS</h2><iframe width="200" height="200" src="./index_files/E69tKrfEQag.html"></iframe></td>
+            <td><h2>TERCER.TRAILERS</h2>
+                <iframe width="200" height="200" src="./index_files/C_IdgsdHwAo.html"></iframe>
+            </td>
+           </tr>
+           
+           <tr>
+            
+            <td><h2>CURIOSIDADES</h2><iframe width="200" height="200" src="./index_files/OF30wu19XnQ.html"></iframe></td>
+            <td><h2>CURIOSIDADES</h2><iframe width="200" height="200" src="./index_files/CSSsgfE_PEQ.html"></iframe></td>
+            <td><h2>CURIOSIDADES</h2><iframe width="200" height="200" src="./index_files/YJln-bAvoME.html"></iframe></td>
+           </tr>
+           <tr>
+            
+            <td><h2>RESUMENES DEL fede lobo</h2><iframe width="200" height="200" src="./index_files/EEBcRrWIDTY.html"></iframe></td>
+            <td><h2>RESUMENES De lamZarok </h2><iframe width="200" height="200" src="./index_files/MUxwLveRpRA.html"></iframe></td>
+            <td><h2>RESUMENES DE Ufram</h2><iframe width="200" height="200" src="./index_files/zBhi-SQBs7Q.html"></iframe></td>
+           </tr>
+           </tbody></table>
+        </center> 
+        <br><br>
+        
+        <a href="file:///C:/Users/LAB%202%20-%2019/Desktop/resident%20evil%204/pagina%20web.html#">VOLVER INICIO</a>
+    </section>
+
+    <section id="BIBLIOGRAFIA">
+        <h1>BIBLIOGRAFIA</h1>
+       <p>paginas de referencia</p>
+       <h2> pagina de curiosidades</h2>
+       <a href="https://www.vidaextra.com/guias-y-trucos/resident-evil-4-remake-consejos-trucos" target="_blank">ver pagina</a><h2>pagina oficial</h2><a href="https://www.playstation.com/es-bo/games/resident-evil-4-remake/" target="_blank">ver pagina</a><table>
+        <tbody><tr>
+        
+        
+         
+    </tr>
+
+    </tbody></table>
+    <br> <br>
+
+        <iframe src="./index_files/pubhtml.html" width="100%" height="400px" style="border: none;">
+    </iframe>
+
+
+<br><br>
+        <a href="file:///C:/Users/LAB%202%20-%2019/Desktop/resident%20evil%204/pagina%20web.html#">VOLVER INICIO</a>
+    
+  <br><br>
+  
+  <center>
+    <a href="https://www.facebook.com/profile.php?id=100087632737875&amp;sk=about">
+    <img src="./index_files/Facebook-Logo-2005.jpg" alt="facebok" width="200" height="200"></a> 
+
+    <a href="https://www.youtube.com/">
+  <img src="./index_files/youtube-2-kJzC--1248x698@abc.png" alt="youtube" width="200" height="200"></a> 
+    </center>
+    </section>
+
+
+
+    <script>
+        function mostrarSubSeccion(id) {
+            document.querySelectorAll('.sub-seccion').forEach(function(subSeccion) {
+                subSeccion.style.display = 'none';
+            });
+            document.getElementById(id).style.display = 'block';
+        }
+
+       
+    </script>
+
+
+</body></html>
